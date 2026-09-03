@@ -232,6 +232,13 @@
         >
           Achievements
         </button>
+        <button
+          onclick="switchSection('projects', this)"
+          class="tab-btn flex-1 min-w-[100px] py-2 px-3 rounded-xl text-sm font-semibold transition-all hover:scale-105 active:scale-95 text-white/60 hover:text-white hover:bg-white/10"
+          data-section="projects"
+        >
+          Projects
+        </button>
       </nav>
 
       <!-- OVERVIEW Section -->
@@ -241,11 +248,16 @@
             <span>👤</span> Professional Summary
           </h2>
           <p class="text-white/75 text-sm leading-relaxed">
-            Data Analyst with hands-on experience at NTPC Limited, working on data handling, Excel-based reporting, and enterprise system operations in a real-world environment. Started with Excel data processing (formulas, pivot tables, data cleaning) and progressed to handling SAP-based workflows including maintenance support, material tracking, and procurement processes.
-
-Experienced in organizing and analyzing operational data to support decision-making, with a strong focus on accuracy and structured reporting. Developed a web-based drain survey system integrating image data, location tracking, and issue categorization to manage field data more effectively.
-
-Demonstrates strong learning ability by adapting quickly to new tools and responsibilities. Currently pursuing BCA (2023–2026) while gaining practical industry experience, reflecting a balance of technical learning and real-world application.
+            Data Analyst with hands-on industrial experience at NTPC Limited, combining data analysis, dashboard development, business process understanding, and reporting automation. Experienced in Excel, SAP PM operations, operational data management, MIS reporting, KPI analysis, and interactive dashboard solutions.
+          </p>
+          <p class="text-white/75 text-sm leading-relaxed mt-3">
+            Developed practical business applications and dashboards for industrial and field operations — including <strong class="text-white/90">VibeMon</strong> (industrial vibration monitoring &amp; analytics platform), Monsoon Preparation Dashboard, Grass Cutting Preparation Dashboard, and Status of Running Contracts Dashboard.
+          </p>
+          <p class="text-white/75 text-sm leading-relaxed mt-3">
+            Experienced in transforming operational and field data into structured dashboards, KPIs, trend analyses, status tracking, map-based visualisations, and management-ready reports. Developed automated reporting workflows including one-click PowerPoint generation for key operational dashboards.
+          </p>
+          <p class="text-white/75 text-sm leading-relaxed mt-3">
+            Currently pursuing an <strong class="text-white/90">MBA from the University of Delhi – School of Open Learning (DU SOL)</strong>, while building expertise in SQL, Power BI, DAX, data modelling, Python for data analysis, and Microsoft Fabric — progressing toward advanced Data Analyst / BI / Analytics roles.
           </p>
         </div>
         <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 shadow-xl">
@@ -275,75 +287,173 @@ Demonstrates strong learning ability by adapting quickly to new tools and respon
 
       <!-- EXPERIENCE Section -->
       <div id="experience" class="section-content space-y-5 animate-fade-in">
-        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 shadow-xl">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
-              💼
+
+        <!-- ── CURRENT ROLE ── -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
+
+          <!-- Header -->
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 border border-blue-400/30 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
+              🏢
             </div>
-            <div>
-              <h3 class="font-bold text-white text-lg">Data Analyst</h3>
-              <p class="text-cyan-300 text-sm font-medium">NTPC Limited – Dadri, Uttar Pradesh</p>
-              <p class="text-white/50 text-xs mt-1">Nov 2025 - Present</p>
-              <ul class="mt-3 space-y-2 text-white/75 text-sm">
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Managed SAP operations including PR & PO creation, bill processing, material tracking, and data updates.</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Extracted and structured SAP data into Excel for reporting and analysis purposes.</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Developed Excel-based solutions (formulas, pivot tables, data cleaning) to improve data accuracy and reporting efficiency.</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Streamlined repetitive SAP data tasks using VBA (AI-assisted) for faster processing.</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Built and maintained structured reports to support day-to-day operational decision-making.</span>
-                </li>
-              </ul>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h3 class="font-bold text-white text-base leading-tight">Contract Skilled Worker / Data Entry Operator</h3>
+                <span class="text-xs bg-green-500/20 border border-green-500/30 text-green-300 px-2 py-0.5 rounded-full flex-shrink-0">Current</span>
+              </div>
+              <p class="text-cyan-300 text-xs font-medium mt-0.5">NTPC Limited &mdash; Dadri, Uttar Pradesh</p>
+              <div class="flex flex-wrap gap-3 mt-1 text-white/45 text-xs">
+                <span>📅 Nov 2025 &ndash; Present</span>
+                <span>🏭 MTP Department</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role summary -->
+          <p class="text-white/65 text-xs leading-relaxed mb-4 border-l-2 border-blue-500/40 pl-3">
+            Working in an industrial environment supporting operational data management, SAP PM activities, Excel-based MIS reporting, procurement-related workflows, dashboard development, and reporting automation.
+          </p>
+
+          <!-- Responsibilities -->
+          <div class="mb-4">
+            <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Key Responsibilities</p>
+            <ul class="space-y-1.5 text-white/70 text-xs">
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Handle operational data entry, organisation, validation, and updates using SAP and Excel.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Work with SAP PM processes including maintenance planning, equipment-related data, material checking, and maintenance-support activities.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Extract SAP data and structure it in Excel for reporting, analysis, and management use.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Prepare and maintain Excel-based MIS reports using formulas, lookup functions, Pivot Tables, data validation, and data-cleaning techniques.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Support procurement-related workflows including PR/PO processes, material availability checking, and related data handling.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Develop Excel/VBA-based solutions to reduce repetitive data-processing activities and improve reporting efficiency.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Develop and maintain operational dashboards and data applications for real-world industrial workflows.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Transform operational and field data into KPIs, status summaries, trends, visualisations, and management-ready reports.</span></li>
+              <li class="flex gap-2"><span class="text-blue-300 flex-shrink-0 mt-0.5">▸</span><span>Support automation of reporting and business workflows, including one-click PowerPoint generation.</span></li>
+            </ul>
+          </div>
+
+          <!-- Project exposure -->
+          <div class="mb-4 bg-white/5 border border-white/10 rounded-xl p-3">
+            <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">📱 Key Project Exposure</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-500/15 border border-blue-500/25 text-blue-200 text-xs px-2.5 py-1 rounded-full">VibeMon — Vibration Monitoring &amp; Analytics</span>
+              <span class="bg-blue-500/15 border border-blue-500/25 text-blue-200 text-xs px-2.5 py-1 rounded-full">Monsoon Preparation Dashboard</span>
+              <span class="bg-blue-500/15 border border-blue-500/25 text-blue-200 text-xs px-2.5 py-1 rounded-full">Grass Cutting Preparation Dashboard</span>
+              <span class="bg-blue-500/15 border border-blue-500/25 text-blue-200 text-xs px-2.5 py-1 rounded-full">Status of Running Contracts Dashboard</span>
+              <span class="bg-blue-500/15 border border-blue-500/25 text-blue-200 text-xs px-2.5 py-1 rounded-full">Contract Monitoring &amp; Expiry Alerts</span>
+            </div>
+          </div>
+
+          <!-- Core skills -->
+          <div>
+            <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">📊 Core Experience</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Excel</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">SAP PM</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">MIS Reporting</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Data Analysis</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Dashboard Development</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Automation</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Operational Data Management</span>
             </div>
           </div>
         </div>
 
-        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 shadow-xl">
-          <div class="flex items-start gap-4">
+        <!-- ── APPRENTICESHIP ── -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
+
+          <!-- Header -->
+          <div class="flex items-start gap-4 mb-4">
             <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
               🎓
             </div>
-            <div>
-              <h3 class="font-bold text-white text-lg">Apprentice - COPA</h3>
-              <p class="text-cyan-300 text-sm font-medium">NTPC Limited – Dadri, Uttar Pradesh</p>
-              <p class="text-white/50 text-xs mt-1">Jul 2024 - Jul 2025</p>
-              <ul class="mt-3 space-y-2 text-white/75 text-sm">
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Started with Excel-based tasks including data formatting, VLOOKUP/XLOOKUP, and pivot tables .</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Progressed to SAP operations including performance index reporting, PM planning support, and material availability checks.</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Assisted in handling and organizing operational data across SAP and Excel systems.</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Developed understanding of real-world business workflows and enterprise system usage.</span>
-                </li>
-                <li class="flex gap-2">
-                  <span class="text-blue-300 flex-shrink-0">▸</span>
-                  <span>Demonstrated strong learning ability by transitioning from basic Excel tasks to SAP-based responsibilities.</span>
-                </li>
-              </ul>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-bold text-white text-base leading-tight">Apprentice — Computer Operator and Programming Assistant (COPA)</h3>
+              <p class="text-cyan-300 text-xs font-medium mt-0.5">NTPC Limited &mdash; Dadri, Uttar Pradesh</p>
+              <div class="flex flex-wrap gap-3 mt-1 text-white/45 text-xs">
+                <span>📅 Jul 2024 &ndash; Jul 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role summary -->
+          <p class="text-white/65 text-xs leading-relaxed mb-4 border-l-2 border-cyan-500/40 pl-3">
+            Completed a one-year apprenticeship at NTPC Limited, gaining practical exposure to enterprise operations, Excel-based data handling, SAP-related workflows, MIS reporting, and real-world industrial processes.
+          </p>
+
+          <!-- Responsibilities -->
+          <div class="mb-4">
+            <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Key Responsibilities</p>
+            <ul class="space-y-1.5 text-white/70 text-xs">
+              <li class="flex gap-2"><span class="text-cyan-300 flex-shrink-0 mt-0.5">▸</span><span>Performed Excel-based data entry, formatting, data organisation, and reporting activities.</span></li>
+              <li class="flex gap-2"><span class="text-cyan-300 flex-shrink-0 mt-0.5">▸</span><span>Used VLOOKUP/XLOOKUP and Pivot Tables for data processing and summarisation.</span></li>
+              <li class="flex gap-2"><span class="text-cyan-300 flex-shrink-0 mt-0.5">▸</span><span>Assisted with SAP-based operational activities, data handling, and PM planning support.</span></li>
+              <li class="flex gap-2"><span class="text-cyan-300 flex-shrink-0 mt-0.5">▸</span><span>Supported material availability checks and helped organise operational information across SAP and Excel.</span></li>
+              <li class="flex gap-2"><span class="text-cyan-300 flex-shrink-0 mt-0.5">▸</span><span>Improved data accuracy through structured data handling and validation practices.</span></li>
+              <li class="flex gap-2"><span class="text-cyan-300 flex-shrink-0 mt-0.5">▸</span><span>Developed understanding of enterprise workflows and industrial business processes.</span></li>
+              <li class="flex gap-2"><span class="text-cyan-300 flex-shrink-0 mt-0.5">▸</span><span>Progressed from basic Excel-based tasks to more advanced operational and SAP responsibilities.</span></li>
+            </ul>
+          </div>
+
+          <!-- Skills -->
+          <div>
+            <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">📊 Skills Developed</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Excel</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Data Handling</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">SAP Operations</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">MIS Reporting</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Data Validation</span>
+              <span class="bg-white/8 border border-white/12 text-white/65 text-xs px-2 py-0.5 rounded-full">Business Process Understanding</span>
             </div>
           </div>
         </div>
+
+        <!-- ── CAREER PROGRESSION ── -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
+          <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-4 text-center">From Data Operations to Data Analytics</p>
+          <p class="text-white/55 text-xs leading-relaxed text-center mb-5">
+            Started with structured data handling and Excel reporting during my NTPC apprenticeship and progressed into SAP PM operations, MIS reporting, dashboard development, automation, and industrial data-analysis projects.
+          </p>
+
+          <!-- Timeline -->
+          <div class="flex flex-col items-center gap-0">
+
+            <div class="w-full max-w-xs">
+              <div class="bg-blue-500/15 border border-blue-500/25 rounded-xl px-4 py-2.5 text-center">
+                <p class="text-blue-300 text-xs font-bold">2024</p>
+                <p class="text-white/80 text-xs font-semibold mt-0.5">NTPC Apprenticeship</p>
+                <p class="text-white/45 text-xs mt-0.5">Excel &bull; Data Handling &bull; SAP Exposure</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center py-1 text-white/30">
+              <span class="text-xs leading-none">│</span>
+              <span class="text-xs leading-none">▼</span>
+            </div>
+
+            <div class="w-full max-w-xs">
+              <div class="bg-cyan-500/15 border border-cyan-500/25 rounded-xl px-4 py-2.5 text-center">
+                <p class="text-cyan-300 text-xs font-bold">Nov 2025</p>
+                <p class="text-white/80 text-xs font-semibold mt-0.5">NTPC Contract Role</p>
+                <p class="text-white/45 text-xs mt-0.5">SAP PM &bull; MIS Reporting &bull; Operational Data</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center py-1 text-white/30">
+              <span class="text-xs leading-none">│</span>
+              <span class="text-xs leading-none">▼</span>
+            </div>
+
+            <div class="w-full max-w-xs">
+              <div class="bg-violet-500/15 border border-violet-500/25 rounded-xl px-4 py-2.5 text-center">
+                <p class="text-violet-300 text-xs font-bold">2025 – Present</p>
+                <p class="text-white/80 text-xs font-semibold mt-0.5">Data &amp; Dashboard Projects</p>
+                <p class="text-white/45 text-xs mt-0.5">Analytics &bull; Automation &bull; Business Applications</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
       <!-- EDUCATION Section -->
@@ -353,13 +463,30 @@ Demonstrates strong learning ability by adapting quickly to new tools and respon
             <span>🎓</span> Education
           </h2>
           <div class="space-y-4">
+            <!-- MBA — Currently Pursuing (shown first as highest current qualification) -->
+            <div class="flex items-start gap-4 pb-4 border-b border-white/10">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 border border-blue-400/30 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
+                🎓
+              </div>
+              <div>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <h3 class="font-bold text-white text-sm">Master of Business Administration (MBA)</h3>
+                  <span class="text-xs bg-blue-500/20 border border-blue-500/30 text-blue-300 px-2 py-0.5 rounded-full">Currently Pursuing</span>
+                </div>
+                <p class="text-cyan-300 text-xs font-medium mt-0.5">University of Delhi – School of Open Learning (DU SOL)</p>
+                <p class="text-white/50 text-xs mt-0.5">2026 – 2028 &nbsp;·&nbsp; Business Administration / Management</p>
+              </div>
+            </div>
+
+            <!-- BCA -->
             <div class="flex items-start gap-4 pb-4 border-b border-white/10 last:border-b-0">
               <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
                 🏫
               </div>
               <div>
                 <h3 class="font-bold text-white text-sm">Bachelor of Computer Applications (BCA)</h3>
-                <p class="text-white/55 text-xs mt-0.5">Ch. Charan Singh University, Ghaziabad</p>
+                <p class="text-white/55 text-xs mt-0.5">M.M.H. College, Ghaziabad &nbsp;·&nbsp; CCS University, Meerut</p>
+                <p class="text-white/40 text-xs mt-0.5">2023 – 2026</p>
               </div>
             </div>
 
@@ -399,100 +526,157 @@ Demonstrates strong learning ability by adapting quickly to new tools and respon
 
       <!-- SKILLS Section -->
       <div id="skills" class="section-content space-y-5 animate-fade-in">
+
+        <!-- ── CORE SKILLS heading ── -->
+        <div class="flex items-center gap-3">
+          <div class="h-px flex-1 bg-gradient-to-r from-blue-500/40 to-transparent"></div>
+          <span class="text-xs font-semibold text-blue-300 uppercase tracking-widest">Core Skills</span>
+          <div class="h-px flex-1 bg-gradient-to-l from-blue-500/40 to-transparent"></div>
+        </div>
+
+        <!-- Cat 1: Data Analytics & Reporting -->
         <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
           <h3 class="font-bold text-blue-300 text-sm mb-3 flex items-center gap-2">
-            <span>📊</span> Data & Reporting
+            <span>📊</span> Data Analytics &amp; Reporting
           </h3>
           <div class="flex flex-wrap gap-2">
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Advanced Excel
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Pivot Tables & Data Summarization
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              MIS Reporting
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Basic Dashboard Creation
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Power BI
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Excel VBA (AI-Assisted)
-            </span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Advanced Excel</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">VLOOKUP / XLOOKUP</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Pivot Tables &amp; Data Summarization</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Data Cleaning &amp; Validation</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Power Query</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">MIS Reporting</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">KPI Reporting</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Data Visualization</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Dashboard Development</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Power BI</span>
           </div>
         </div>
 
-        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
-          <h3 class="font-bold text-cyan-300 text-sm mb-3 flex items-center gap-2">
-            <span>🏭</span> Business & ERP Operations
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              SAP PM Operations (User-Level)
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Material Verification & Tracking
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Procurement Workflow (PR/PO Cycle)
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Bill Processing Support
-            </span>
-          </div>
-        </div>
-
-        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
-          <h3 class="font-bold text-indigo-300 text-sm mb-3 flex items-center gap-2">
-            <span>💻</span> Technical & Development
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Business Process Understanding
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              System Workflow Design
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Requirement-Based Solution Building
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Basic Debugging & Issue Handling
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Logic Building for Automation Tasks
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              AI-Assisted Problem Solving & Development
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Data Flow Mapping
-            </span>
-          </div>
-        </div>
-
+        <!-- Cat 5: Automation & Reporting -->
         <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
           <h3 class="font-bold text-violet-300 text-sm mb-3 flex items-center gap-2">
-            <span>🛠️</span> Tools & Productivity
+            <span>⚙️</span> Automation &amp; Reporting
           </h3>
           <div class="flex flex-wrap gap-2">
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Task Prioritization & Work Management
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Process Documentation
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Operational Coordination
-            </span>
-            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">
-              Continuous Learning with AI Tools
-            </span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Excel VBA</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Google Apps Script</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Workflow Automation</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Automated Report Generation</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">PowerPoint Report Automation</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Data-to-Report Automation</span>
           </div>
         </div>
+
+        <!-- Cat 6: Web & Data Applications -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
+          <h3 class="font-bold text-indigo-300 text-sm mb-3 flex items-center gap-2">
+            <span>💻</span> Web &amp; Data Applications
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">HTML</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">CSS</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">JavaScript</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Responsive Web Applications</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Interactive Dashboard Development</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Supabase</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Google Sheets Integration</span>
+          </div>
+        </div>
+
+        <!-- Cat 7: GIS & Field Data -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
+          <h3 class="font-bold text-emerald-300 text-sm mb-3 flex items-center gap-2">
+            <span>🗺️</span> GIS &amp; Field Data
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">GIS-Based Data Visualization</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">GPS / Location Data</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Field Data Collection</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Map-Based Visualization</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Image &amp; Evidence Management</span>
+          </div>
+        </div>
+
+        <!-- Cat 8: Business & ERP Operations -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-xl">
+          <h3 class="font-bold text-cyan-300 text-sm mb-3 flex items-center gap-2">
+            <span>🏭</span> Business &amp; ERP Operations
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">SAP PM Operations (User-Level)</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Material Verification &amp; Tracking</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Procurement Workflow (PR/PO Cycle)</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Bill Processing Support</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Business Process Understanding</span>
+            <span class="skill-chip bg-white/10 hover:bg-white/20 border border-white/15 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Operations Analytics</span>
+          </div>
+        </div>
+
+        <!-- ── CURRENTLY LEARNING heading ── -->
+        <div class="flex items-center gap-3 mt-2">
+          <div class="h-px flex-1 bg-gradient-to-r from-amber-500/40 to-transparent"></div>
+          <span class="text-xs font-semibold text-amber-300 uppercase tracking-widest">Currently Learning</span>
+          <div class="h-px flex-1 bg-gradient-to-l from-amber-500/40 to-transparent"></div>
+        </div>
+
+        <!-- Cat 2: SQL & Data Analysis — Currently Learning -->
+        <div class="bg-amber-500/5 backdrop-blur-md border border-amber-500/20 rounded-2xl p-5 shadow-xl">
+          <h3 class="font-bold text-amber-300 text-sm mb-3 flex items-center gap-2">
+            <span>🗄️</span> SQL &amp; Data Analysis
+            <span class="text-xs bg-amber-500/20 border border-amber-500/30 text-amber-300 px-2 py-0.5 rounded-full ml-auto">Learning</span>
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">SQL</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Data Querying</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Joins</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">CTEs</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Window Functions</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Data Aggregation</span>
+          </div>
+        </div>
+
+        <!-- Cat 3: BI & Data Modeling — Currently Learning -->
+        <div class="bg-amber-500/5 backdrop-blur-md border border-amber-500/20 rounded-2xl p-5 shadow-xl">
+          <h3 class="font-bold text-amber-300 text-sm mb-3 flex items-center gap-2">
+            <span>📈</span> BI &amp; Data Modeling
+            <span class="text-xs bg-amber-500/20 border border-amber-500/30 text-amber-300 px-2 py-0.5 rounded-full ml-auto">Learning</span>
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">DAX</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Data Modeling</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">KPI &amp; Trend Analysis</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Interactive Dashboard Design</span>
+          </div>
+        </div>
+
+        <!-- Cat 4: Python for Data Analysis — Currently Learning -->
+        <div class="bg-amber-500/5 backdrop-blur-md border border-amber-500/20 rounded-2xl p-5 shadow-xl">
+          <h3 class="font-bold text-amber-300 text-sm mb-3 flex items-center gap-2">
+            <span>🐍</span> Python for Data Analysis
+            <span class="text-xs bg-amber-500/20 border border-amber-500/30 text-amber-300 px-2 py-0.5 rounded-full ml-auto">Learning</span>
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Python</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Pandas</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">NumPy</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Matplotlib</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Data Cleaning</span>
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Exploratory Data Analysis</span>
+          </div>
+        </div>
+
+        <!-- Cat 9: Microsoft Data Platform — Currently Learning -->
+        <div class="bg-amber-500/5 backdrop-blur-md border border-amber-500/20 rounded-2xl p-5 shadow-xl">
+          <h3 class="font-bold text-amber-300 text-sm mb-3 flex items-center gap-2">
+            <span>☁️</span> Microsoft Data Platform
+            <span class="text-xs bg-amber-500/20 border border-amber-500/30 text-amber-300 px-2 py-0.5 rounded-full ml-auto">Learning</span>
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-chip bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-200/80 text-xs px-3 py-1.5 rounded-full transition-colors cursor-default hover:scale-105">Microsoft Fabric</span>
+          </div>
+        </div>
+
       </div>
 
       <!-- CERTIFICATIONS Section -->
@@ -612,6 +796,213 @@ Demonstrates strong learning ability by adapting quickly to new tools and respon
                 </p>
               </div>
             </div>
+
+            <div class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-4 flex gap-4 transition-colors hover:scale-[1.01] cursor-default">
+              <div class="text-2xl flex-shrink-0">🏆</div>
+              <div>
+                <span class="inline-block text-xs bg-yellow-500/20 border border-yellow-500/30 text-yellow-300 px-2 py-0.5 rounded-full mb-2">
+                  QC Winner — VibeMon
+                </span>
+                <p class="text-white/75 text-sm leading-relaxed">
+                  Recognized as a Quality Circle (QC) Winner for VibeMon, an industrial vibration monitoring and analytics solution developed to improve equipment monitoring, data analysis and maintenance decision support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS Section -->
+      <div id="projects" class="section-content space-y-5 animate-fade-in">
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 shadow-xl">
+          <h2 class="text-lg font-bold text-blue-300 mb-2 flex items-center gap-2">
+            <span>🚀</span> Projects
+          </h2>
+          <p class="text-white/55 text-xs mb-5">Real-world NTPC dashboards and data-analytics solutions — covering the full workflow from field data capture to automated management reporting.</p>
+
+          <div class="space-y-5">
+
+            <!-- PROJECT 1: VibeMon -->
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/8 transition-colors">
+              <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="font-bold text-white text-base">VibeMon</h3>
+                  <p class="text-cyan-300 text-xs font-medium mt-0.5">Industrial Vibration Monitoring &amp; Analytics Platform</p>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-yellow-500/20 border border-yellow-500/30 text-yellow-300 px-2 py-0.5 rounded-full">🏆 QC Winner</span>
+                  <span class="text-xs bg-purple-500/20 border border-purple-500/30 text-purple-300 px-2 py-0.5 rounded-full">⚙️ Maintenance Analytics</span>
+                </div>
+              </div>
+              <p class="text-white/70 text-sm leading-relaxed mb-4">
+                A field-engineer vibration monitoring application connected with a management dashboard for equipment health monitoring, vibration analysis, historical tracking and maintenance decision support.
+              </p>
+              <div class="mb-4">
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Key Features</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Field vibration data entry</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">H/V/A parameters &amp; acceleration</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Equipment health classification</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Trend &amp; history analysis</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Missed-reading tracking</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Vibration exception monitoring</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">AI-assisted recommendations</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Management KPI dashboard</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Financial &amp; savings analysis</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Excel / PDF reporting</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">WhatsApp report sharing</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Technologies</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">HTML/CSS/JS</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Supabase</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Google Sheets</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Data Visualization</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Dashboard Development</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">AI-assisted Analytics</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 2: Monsoon Preparation Dashboard -->
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/8 transition-colors">
+              <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="font-bold text-white text-base">Monsoon Preparation Dashboard</h3>
+                  <p class="text-cyan-300 text-xs font-medium mt-0.5">Drain Survey &amp; Field Data Management</p>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-green-500/20 border border-green-500/30 text-green-300 px-2 py-0.5 rounded-full">⚡ AUTO-PPT REPORTING</span>
+                  <span class="text-xs bg-blue-500/20 border border-blue-500/30 text-blue-300 px-2 py-0.5 rounded-full">🗺️ GIS / Field Survey</span>
+                </div>
+              </div>
+              <p class="text-white/70 text-sm leading-relaxed mb-3">
+                A digital field survey and monitoring system for managing monsoon drain-preparation activities through location-based survey data, photographs, status classification and interactive visualization.
+              </p>
+              <div class="bg-cyan-500/8 border border-cyan-500/20 rounded-xl p-3 mb-4">
+                <p class="text-cyan-300 text-xs font-semibold mb-1">⚡ Automated PowerPoint Reporting</p>
+                <p class="text-white/60 text-xs leading-relaxed">One-click auto-generation of a management-ready PowerPoint presentation from live survey data — including survey summary, status analysis, GPS map data, field photographs and findings.</p>
+              </div>
+              <div class="mb-4">
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Key Features</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Interactive GIS survey map</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Field photo &amp; evidence upload</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">GPS / location-based records</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Drain status classification</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Critical / Moderate / Minor / Cleaned</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Severity-based filtering</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Survey statistics &amp; summary</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Exportable management reports</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Technologies</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">HTML/CSS/JS</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Supabase</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">GIS / Maps</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">GPS Data</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Data Visualization</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Automated PPT Reporting</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 3: Grass Cutting Preparation Dashboard -->
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/8 transition-colors">
+              <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="font-bold text-white text-base">Grass Cutting Preparation Dashboard</h3>
+                  <p class="text-cyan-300 text-xs font-medium mt-0.5">Field Survey &amp; Monitoring System</p>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-green-500/20 border border-green-500/30 text-green-300 px-2 py-0.5 rounded-full">⚡ AUTO-PPT REPORTING</span>
+                  <span class="text-xs bg-blue-500/20 border border-blue-500/30 text-blue-300 px-2 py-0.5 rounded-full">🗺️ GIS / Field Survey</span>
+                </div>
+              </div>
+              <p class="text-white/70 text-sm leading-relaxed mb-3">
+                A digital field survey and monitoring dashboard for tracking grass-cutting preparation activities, field conditions, locations and completion status across NTPC plant areas.
+              </p>
+              <div class="bg-cyan-500/8 border border-cyan-500/20 rounded-xl p-3 mb-4">
+                <p class="text-cyan-300 text-xs font-semibold mb-1">⚡ Automated PowerPoint Reporting</p>
+                <p class="text-white/60 text-xs leading-relaxed">Converts field survey data, classifications, photographs, map information and findings into a presentation-ready management report — with one click.</p>
+              </div>
+              <div class="mb-4">
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Key Features</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Interactive survey map</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">GPS / location-based records</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Field photograph collection</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Status tracking &amp; classification</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Critical / Moderate / Minor / Completed</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Department-wise filtering</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Location-based visualization</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Exportable management reports</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Technologies</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">HTML/CSS/JS</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Supabase</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">GIS / Maps</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">GPS Data</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Data Visualization</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Automated PPT Reporting</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 4: Status of Running Contracts Dashboard -->
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/8 transition-colors">
+              <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                <div>
+                  <h3 class="font-bold text-white text-base">Status of Running Contracts Dashboard</h3>
+                  <p class="text-cyan-300 text-xs font-medium mt-0.5">Contract Monitoring &amp; PR Alert System</p>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-orange-500/20 border border-orange-500/30 text-orange-300 px-2 py-0.5 rounded-full">📋 MIS / Contract Monitoring</span>
+                </div>
+              </div>
+              <p class="text-white/70 text-sm leading-relaxed mb-4">
+                A contract-monitoring dashboard providing centralized visibility of running service contracts, contract types, expiry timelines and PR status — enabling proactive contract management and timely renewals.
+              </p>
+              <div class="mb-4">
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Dashboard KPIs &amp; Views</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Total Running Contracts</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Regular &amp; Overhauling Contracts</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Expiring within 180 Days</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">PR Not Initiated alerts</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">PR Initiated status</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Contract type breakdown</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Department-wise view</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Contract filtering</span>
+                  <span class="text-xs bg-white/8 border border-white/10 text-white/70 px-2 py-1 rounded-lg">Auto dashboard refresh</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Technologies</p>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">HTML/CSS/JS</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Google Sheets</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Apps Script</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Data Visualization</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">MIS Reporting</span>
+                  <span class="text-xs bg-blue-500/15 border border-blue-500/25 text-blue-300 px-2 py-0.5 rounded-full">Data Analysis</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coming Soon notice -->
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-5 text-center">
+              <p class="text-blue-300 text-sm font-semibold mb-1">🔧 More Projects Coming Soon</p>
+              <p class="text-white/50 text-xs">Additional NTPC dashboards and data automation projects are currently in development and will be listed here.</p>
+            </div>
+
           </div>
         </div>
       </div>
